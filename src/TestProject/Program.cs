@@ -1,14 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using System.IO;
+using Xunit;
 
 namespace TestProject
 {
     public class Program
     {
-        public static void Main(string[] args)
+        [Fact]
+        public void Test()
         {
+            Assert.True(File.Exists("data.txt"));
         }
     }
 }
